@@ -1,8 +1,3 @@
-alert('hello world!');
-
-let favoriteFood = 'Lasagna!';
-document.write(favoriteFood);
-
 //start 1.2 task
 let pokemonList = [
   {name: 'Jigglypuff', type: ['fairy', 'normal'], height: 0.5},
