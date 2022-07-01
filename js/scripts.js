@@ -17,3 +17,19 @@ for (let i=0; i<pokemonList.length; i++){
 }
 }
 
+/*for (let i=0; i<pokemonList.length; i++){
+  if (pokemonList[i].name != 0 && pokemonList[i].height < 0.4){
+  document.write(pokemonList[i].name + " (height: " + pokemonList[i].height + ") ");
+} else if (pokemonList[i].name !=0 && pokemonList[i].height < 1){
+  document.write(pokemonList[i].name + " (height: " + pokemonList[i].height + ") ");
+} else if (pokemonList[i].name !=0 && pokemonList[i].height < 1.2){
+  document.write(pokemonList[i].name + " (height: " + pokemonList[i].height + ") ");
+} else if (pokemonList[i].name !=0 && pokemonList[i].height < 1.5){
+  document.write(pokemonList[i].name + " (height: " + pokemonList[i].height + ") ");
+} else if (pokemonList[i].name !=0 && pokemonList[i].height < 2){
+  document.write(pokemonList[i].name + " (height: " + pokemonList[i].height + ") ");
+} else if (pokemonList[i].name !=0 && pokemonList[i].height > 3){
+  document.write(pokemonList[i].name + " (height: " + pokemonList[i].height + ") - what a big one! ");
+}
+}*/
+//Trying to see if I could get the loop to iterate each item on its own line/space. No dice.
