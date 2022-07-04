@@ -12,7 +12,7 @@ let pokemonList = [
 for (let i=0; i<pokemonList.length; i++){
   if (pokemonList[i].name != 0 && pokemonList[i].height < 3){ //iterates out all items smaller than height 3
   document.write(pokemonList[i].name + " (height: " + pokemonList[i].height + ") <br>");
-} else if (pokemonList[i].name !=0 && pokemonList[i].height > 3){ //iterates out all items larger than height 3
+} else (pokemonList[i].name !=0 && pokemonList[i].height > 3){ //iterates out all items larger than height 3
   document.write(pokemonList[i].name + " (height: " + pokemonList[i].height + ") - what a big one! <br>");
 }
 }
