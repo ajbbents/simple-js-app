@@ -8,14 +8,9 @@ let pokemonList = [
   {name: 'Rattata', type: ['normal', ' dark'], height: 0.3}
 ];
 
-//wanting my list to appear with each iteration on a new line, but...
-for (let i=0; i<pokemonList.length; i++){
-  if (pokemonList[i].name != 0 && pokemonList[i].height < 3){ //iterates out all items smaller than height 3
-  document.write(pokemonList[i].name + " (height: " + pokemonList[i].height + ") <br>");
-} if (pokemonList[i].name !=0 && pokemonList[i].height > 3){ //iterates out all items larger than height 3
-  document.write(pokemonList[i].name + " (height: " + pokemonList[i].height + ") - what a big one! <br>");
-}
-}
+pokemonList.forEach(function(user) {
+  document.write(user.name + ": (height: " + user.height + ") " + user.type + "<br>");
+});
 
 /*for (let i=0; i<pokemonList.length; i++){
   if (pokemonList[i].name != 0 && pokemonList[i].height < 0.4){
