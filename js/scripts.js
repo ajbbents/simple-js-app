@@ -11,12 +11,11 @@ let pokemonRepository = (function () {
 
   function add(pokemon) {
     pokemonList.push(pokemon);
-    return pokemonList;
-  };
+  }
 
   function getAll() {
     return pokemonList;
-  };
+  }
 
   return {
     add: add,
@@ -24,8 +23,7 @@ let pokemonRepository = (function () {
   };
 })();
 
-pokemonRepository.add();
-
 pokemonRepository.getAll().forEach(function(pokemon) {
+  pokemonRepository.add(pokemon);
   document.write(pokemon.name + ": (height: " + pokemon.height + ") " + pokemon.type + "<br>");
 });
