@@ -28,3 +28,11 @@ pokemonList.forEach(function(user) {
 }
 }*/
 //Trying to see if I could get the loop to iterate each item on its own line/space. No dice.
+
+//for (let i=0; i<pokemonList.length; i++){
+//  if (pokemonList[i].name != 0 && pokemonList[i].height < 3){ //iterates out all items smaller than height 3
+//  document.write(pokemonList[i].name + " (height: " + pokemonList[i].height + ") <br>");
+//} if (pokemonList[i].name !=0 && pokemonList[i].height > 3){ //iterates out all items larger than height 3
+//  document.write(pokemonList[i].name + " (height: " + pokemonList[i].height + ") - what a big one! <br>");
+//}
+//}
