@@ -18,13 +18,18 @@ let pokemonRepository = (function () {
   }
 
 //logs individual details in console
+  function showDetails(pokemon) {
+    console.log(pokemon);
+  }
   return {
     add: add,
     getAll: getAll
+    showDetails: showDetails
   };
 })();
 
 pokemonRepository.getAll().forEach(function(pokemon) {
   pokemonRepository.add(pokemon);
   document.write(pokemon.name + ": (height: " + pokemon.height + ") " + pokemon.type + "<br>");
+  pokemonRepository.showDetails(pokemon);
 });
