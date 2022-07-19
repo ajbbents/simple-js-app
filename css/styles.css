@@ -20,3 +20,20 @@ body {
   padding: 50px;
   margin: 20px;
 }
+
+.button-class {
+  background-color: #3340ff;
+  border: #000000 200px;
+  border-color: #000000;
+  color: white;
+  padding: 20px 75px 20px 75px;
+  margin: 25px;
+  font-family: inherit;
+  font-weight: 700;
+  text-align: center;
+  font-size: 18px;
+  text-decoration: none;
+  display: inline-block;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
