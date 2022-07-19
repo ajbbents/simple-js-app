@@ -1,4 +1,3 @@
-//start 1.2 task
 let pokemonRepository = (function () {
   let pokemonList = [
     {name: 'Hypno', type: 'psychic', height: 1.6},
@@ -13,10 +12,12 @@ let pokemonRepository = (function () {
     pokemonList.push(pokemon);
   }
 
+//returns list of pokemon and characteristics
   function getAll() {
     return pokemonList;
   }
 
+//logs individual details in console
   return {
     add: add,
     getAll: getAll
