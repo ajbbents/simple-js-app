@@ -33,3 +33,6 @@ pokemonRepository.getAll().forEach(function(pokemon) {
   document.write(pokemon.name + ": (height: " + pokemon.height + ") " + pokemon.type + "<br>");
   pokemonRepository.showDetails(pokemon);
 });
+
+//  document.write(pokemon.name + ": (height: " + pokemon.height + ") " + pokemon.type + "<br>");})
+//  pokemonRepository.add(pokemon);
