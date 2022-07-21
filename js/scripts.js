@@ -62,6 +62,13 @@ let pokemonRepository = (function () {
     });
   }
 
+  //logs individual details in console
+  function showDetails(pokemon) {
+    loadDetails(pokemon).then(function () {
+      console.log(pokemon);
+    });
+  }
+
   return {
     add: add,
     getAll: getAll,
