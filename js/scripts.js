@@ -6,6 +6,7 @@ let pokemonRepository = (function () {
     {name: 'Muk', type: 'poison', height: 1.2},
     {name: 'Palkia', type: ['dragon', ' water'], height: 4.2},
     {name: 'Rattata', type: ['normal', ' dark'], height: 0.3} */
+  let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
 
   function add(pokemon) {
     pokemonList.push(pokemon);
