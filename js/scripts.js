@@ -79,9 +79,11 @@ let pokemonRepository = (function () {
   };
 })();
 
-pokemonRepository.getAll().forEach(function(pokemon) {
+pokemonRepository.loadList().then(function() {
+  pokemonRepository.getAll().forEach(function(pokemon) {
   pokemonRepository.addListItem(pokemon);
   pokemonRepository.showDetails(pokemon);
+  });
 });
 
 //  document.write(pokemon.name + ": (height: " + pokemon.height + ") " + pokemon.type + "<br>");})
