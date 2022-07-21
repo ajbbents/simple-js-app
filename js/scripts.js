@@ -17,11 +17,6 @@ let pokemonRepository = (function () {
     return pokemonList;
   }
 
-//logs individual details in console
-  function showDetails(pokemon) {
-    console.log(pokemon);
-  }
-
   function addListItem(pokemon) {
     let pokemonList = document.querySelector('.pokemon-list');
     let listItem = document.createElement('li');
