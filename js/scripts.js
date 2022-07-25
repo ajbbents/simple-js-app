@@ -67,6 +67,26 @@ let pokemonRepository = (function () {
     });
   }
 
+  function showModal(pokemon) {
+    let modalContainer = document.querySelector('#modal');
+    modalContainer.innerHTML = '';
+    let modal = document.createElement('div');
+    modal.classList.add('modal')
+
+    let closeButtonElement = document.createElement('button');
+    closeButtonElement.classList.add('modal-close');
+    closeButtonElement.innerText = 'Be gone now';
+    closeButtonElement.addEventListener('click', hideModal);
+
+    modal.appendChild(closeButtonElement);
+    modalContainer.appendChild(modal);
+    modalContainer.classList.add('is-visible');
+  }
+
+  function hideModal() {
+    modalContainer.classList.remove('is-visible');
+  }
+
   // window.addEventListener('keydown', (e) => {
   //   if (e.key === 'Escape' && modalContainer.classList.contains('is-visible')) {
   //     hideModal();
