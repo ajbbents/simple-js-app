@@ -11,6 +11,7 @@ let pokemonRepository = (function () {
     return pokemonList;
   }
 
+//add pokes to list, creates button for each poke
   function addListItem(pokemon) {
     let pokemonList = document.querySelector('.pokemon-list');
     let listItem = document.createElement('li');
@@ -24,6 +25,7 @@ let pokemonRepository = (function () {
     })
   }
 
+//fetches list from api
   function loadList() {
     return fetch(apiUrl).then(function (response) {
       return response.json();
@@ -41,6 +43,7 @@ let pokemonRepository = (function () {
     })
   }
 
+//loads pokemon details
   function loadDetails(item) {
     let url = item.detailsUrl;
     return fetch(url).then(function (response) {
@@ -56,7 +59,6 @@ let pokemonRepository = (function () {
     });
   }
 
-  //logs individual details in console
   function showDetails(pokemon) {
     loadDetails(pokemon).then(function () {
       console.log(pokemon);
