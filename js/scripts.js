@@ -18,6 +18,7 @@ let pokemonRepository = (function () {
     let button = document.createElement('button');
     button.innerText = pokemon.name;
     button.classList.add('button-class');
+    // button.classList.add('show-modal');
     listItem.appendChild(button);
     pokemonList.appendChild(listItem);
     button.addEventListener('click', function() {
@@ -64,6 +65,24 @@ let pokemonRepository = (function () {
       console.log(pokemon);
     });
   }
+
+  // window.addEventListener('keydown', (e) => {
+  //   if (e.key === 'Escape' && modalContainer.classList.contains('is-visible')) {
+  //     hideModal();
+  //   }
+  // });
+  //
+  // let modalContainer = document.querySelector('#modal');
+  // modalContainer.addEventListener('click', (e) => {
+  //   let target = e.target;
+  //   if (target === modalContainer) {
+  //     hideModal();
+  //   }
+  // });
+  //
+  // document.querySelector('#show-modal').addEventListener('click', () => {
+  //   showModal(pokemon.name);
+  // });
 
   return {
     add: add,
