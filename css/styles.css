@@ -78,9 +78,9 @@ body {
   text-decoration: underline;
 }
 
-#modal {
+/* #modal {
   display: none;
-}
+} */
 
 #model.is-visible {
   display: block;
