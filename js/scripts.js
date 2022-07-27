@@ -61,14 +61,14 @@ let pokemonRepository = (function () {
   }
 
   function showDetails(pokemon) {
-    loadDetails(pokemon).then(function () {
-      let modalContainer = document.querySelector('#modal');
-      showModal(pokemon);
-    });
-  }
+    // let button = document.querySelector('.button-class')
+    // button.classList.add('show-modal');
+    // button.addEventListener('click', function() {
+    //   showModal(pokemon);
+    // });
 
-  function showModal(pokemon) {
     let modalContainer = document.querySelector('#modal');
+    modalContainer.classList.add('.show-modal');
     modalContainer.innerHTML = '';
     let modal = document.createElement('div');
     modal.classList.add('modal')
@@ -82,6 +82,23 @@ let pokemonRepository = (function () {
     modalContainer.appendChild(modal);
     modalContainer.classList.add('is-visible');
   }
+
+  // function showModal(pokemon) {
+  //
+  //   let modalContainer = document.querySelector('#modal');
+  //   modalContainer.innerHTML = '';
+  //   let modal = document.createElement('div');
+  //   modal.classList.add('modal')
+  //
+  //   let closeButtonElement = document.createElement('button');
+  //   closeButtonElement.classList.add('modal-close');
+  //   closeButtonElement.innerText = 'Be gone now';
+  //   closeButtonElement.addEventListener('click', hideModal);
+  //
+  //   modal.appendChild(closeButtonElement);
+  //   modalContainer.appendChild(modal);
+  //   modalContainer.classList.add('is-visible');
+  // }
 
   function hideModal() {
     modalContainer.classList.remove('is-visible');
