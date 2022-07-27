@@ -78,10 +78,6 @@ body {
   text-decoration: underline;
 }
 
-/* #modal {
-  display: none;
-} */
-
-#modal.is-visible {
+.show-modal {
   display: block;
 }
