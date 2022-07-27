@@ -118,6 +118,8 @@ let pokemonRepository = (function () {
   //   }
   // });
   //
+  // if I have this active, it tells me that it can't read the properties
+  // of null in the eventListener.
   // document.querySelector('#show-modal').addEventListener('click', () => {
   //   showDetails(pokemon);
   // });
