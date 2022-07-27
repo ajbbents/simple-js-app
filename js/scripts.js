@@ -119,7 +119,7 @@ let pokemonRepository = (function () {
   // });
   //
   // document.querySelector('#show-modal').addEventListener('click', () => {
-  //   showModal(pokemon.name);
+  //   showDetails(pokemon);
   // });
 
   return {
