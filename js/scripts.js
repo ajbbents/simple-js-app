@@ -80,7 +80,7 @@ let pokemonRepository = (function () {
 
     modal.appendChild(closeButtonElement);
     modalContainer.appendChild(modal);
-    modalContainer.classList.add('is-visible');
+    modalContainer.classList.add('show-modal')
   }
 
   // function showModal(pokemon) {
@@ -101,7 +101,7 @@ let pokemonRepository = (function () {
   // }
 
   function hideModal() {
-    modalContainer.classList.remove('is-visible');
+    modalContainer.classList.remove('show-modal');
   }
 
   // window.addEventListener('keydown', (e) => {
