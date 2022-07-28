@@ -72,12 +72,14 @@ body {
 }
 
 .modal-close {
-  float: right;
+  float: left;
   -webkit-appearance: none;
   border: 0;
   background: none;
   color: #777;
   text-decoration: underline;
+  font: inherit;
+  font-size: 14px;
 }
 
 .show-modal {
