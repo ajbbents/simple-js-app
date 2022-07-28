@@ -66,15 +66,6 @@ let pokemonRepository = (function () {
     });
   }
 
-  function showDetails(pokemon) {
-    // let button = document.querySelector('.button-class')
-    // button.classList.add('show-modal');
-    // button.addEventListener('click', function() {
-    //   showModal(pokemon);
-    // });
-
-    let modalContainer = document.querySelector('#modal');
-    modalContainer.classList.add('.show-modal');
     modalContainer.innerHTML = '';
     let modal = document.createElement('div');
     modal.classList.add('modal')
