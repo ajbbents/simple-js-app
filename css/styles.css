@@ -61,13 +61,14 @@ body {
 
 .modal {
   margin: auto;
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
   box-sizing: border-box;
   background: #fff;
   padding: 15px;
   width: 75%;
   max-width: 700px;
-  text-align: left;
+  text-align: center;
 }
 
 .modal-close {
