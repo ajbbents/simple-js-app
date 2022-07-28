@@ -82,6 +82,21 @@ body {
   font-size: 14px;
 }
 
-.show-modal {
+.modal h1 {
+  margin-top: 0;
+  font-weight: 700;
+  text-align: center;
+}
+
+.modal p {
+  margin-bottom: 0;
+  font-weight: 200;
+}
+
+.modal img {
+  height: 150;
+  width: auto;
+}
+
   display: block;
 }
