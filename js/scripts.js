@@ -26,6 +26,13 @@ let pokemonRepository = (function () {
     })
   }
 
+  function showDetails(pokemon) {
+    loadDetails(pokemon).then(function () {
+      showModal(pokemon);
+      console.log(pokemon);
+    });
+  }
+
 //fetches list from api
   function loadList() {
     return fetch(apiUrl).then(function (response) {
