@@ -47,14 +47,15 @@ body {
   position: fixed;
   padding: 20px;
   box-sizing: border-box;
-  top: 20px;
-  left: 20px;
+  top: 0;
+  left: 0;
+  right: 0;
   width: 75%;
   height: 75%;
   background: rgba(0, 0, 0, 0.5);
   z-index: 999;
   overflow: auto;
-  display: none;
+  display: flex;
   text-align: center;
 }
 
