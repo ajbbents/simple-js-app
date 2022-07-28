@@ -66,7 +66,9 @@ let pokemonRepository = (function () {
     });
   }
 
+  function showModal(pokemon) {
     modalContainer.innerHTML = '';
+
     let modal = document.createElement('div');
     modal.classList.add('modal')
 
@@ -75,7 +77,20 @@ let pokemonRepository = (function () {
     closeButtonElement.innerText = 'Be gone now';
     closeButtonElement.addEventListener('click', hideModal);
 
+    let titleElement = document.createElement('h1');
+    titleElement.innerText = pokemon.name;
+
+    let contentElement = document.createElement('p');
+    contentElement.innerText = pokemon.height;
+
+    let imgElement = document.createElement('img');
+    imgElement.classList.add('img-element');
+    imgElement.src = pokemon.imageUrl;
+
     modal.appendChild(closeButtonElement);
+    modal.appendChild(titleElement);
+    modal.appendChild(imgElement);
+    modal.appendChild(contentElement);
     modalContainer.appendChild(modal);
     modalContainer.classList.add('show-modal')
   }
