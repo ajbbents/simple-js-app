@@ -98,5 +98,10 @@ body {
   width: auto;
 }
 
+#modal {
+  display: none;
+}
+
+#modal.show-modal {
   display: block;
 }
