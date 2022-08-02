@@ -38,7 +38,7 @@ body {
   cursor: pointer;
 }
 
-.pokemon-list {
+.list-group-horizontal {
   list-style-type: none;
   text-align: center;
 }
