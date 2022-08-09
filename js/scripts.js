@@ -1,7 +1,7 @@
 let pokemonRepository = (function () {
   let pokemonList = [];
   let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
-  let modalContainer = document.querySelector('#modal');
+  // let modalContainer = document.querySelector('#modal');
 
   function add(pokemon) {
     pokemonList.push(pokemon);
@@ -81,7 +81,7 @@ let pokemonRepository = (function () {
 
     let nameElement = $('<h3>' + pokemon.name + '</h3>');
     let imageElement = $('<img class="pokemon-img">');
-    imageElement.attr("src", pokemon.imageURL);
+    imageElement.attr("src", pokemon.imageUrl);
     let heightElement = $('<p>' + 'Height: ' + pokemon.height + '</p>');
     let typeElement = $('<p>' + 'Types : ' + pokemon.types + '</p>');
     let abilitiesElement = $('<p>' + 'Abilities: ' + pokemon.abilities + '</p>');
