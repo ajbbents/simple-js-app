@@ -83,7 +83,8 @@ let pokemonRepository = (function () {
     let imageElement = $('<img class="pokemon-img">');
     imageElement.attr("src", pokemon.imageUrl);
     let heightElement = $('<p>' + 'Height: ' + pokemon.height + '</p>');
-    let typeElement = $('<p>' + 'Types : ' + pokemon.types + '</p>');
+    let weightElement = $('<p>' + 'Weight: ' + pokemon.weight + '</p>');
+    let typeElement = $('<p>' + 'Types: ' + pokemon.types + '</p>');
     let abilitiesElement = $('<p>' + 'Abilities: ' + pokemon.abilities + '</p>');
 
     modalTitle.append(nameElement);
