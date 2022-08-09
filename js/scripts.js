@@ -89,6 +89,8 @@ let pokemonRepository = (function () {
 
     modalTitle.append(nameElement);
     modalBody.append(imageElement);
+    modalBody.append(heightElement);
+    modalBody.append(weightElement);
     modalBody.append(typeElement);
     modalBody.append(abilitiesElement);
   }
