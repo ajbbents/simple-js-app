@@ -53,6 +53,7 @@ body {
   box-sizing: border-box;
   top: 50%;
   left: 50%;
+  right: 50%;
   transform: translate(-50%, -50%);
   width: 75%;
   height: 75%;
@@ -66,7 +67,7 @@ body {
 .modal {
   margin: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   box-sizing: border-box;
   background: #fff;
   padding: 15px;
