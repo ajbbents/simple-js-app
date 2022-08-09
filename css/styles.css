@@ -75,17 +75,6 @@ body {
   text-align: center;
 }
 
-.modal-close {
-  float: left;
-  -webkit-appearance: none;
-  border: 0;
-  background: none;
-  color: #777;
-  text-decoration: underline;
-  font: inherit;
-  font-size: 14px;
-}
-
 .modal h1 {
   margin-top: 0;
   font-weight: 700;
@@ -100,12 +89,4 @@ body {
 .modal img {
   height: 150;
   width: auto;
-}
-
-#modal {
-  display: none;
-}
-
-#modal.show-modal {
-  display: block;
 }
