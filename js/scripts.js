@@ -13,7 +13,7 @@ let pokemonRepository = (function() {
 	}
 
 	//add pokes to list, creates button for each poke
-	function addListItem (pokemon) {
+	function addListItem(pokemon) {
 		let pokemonList = document.querySelector('.list-group-horizontal');
 		let listItem = document.createElement('li');
 		listItem.classList.add('group-list-item');
