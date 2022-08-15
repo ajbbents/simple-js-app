@@ -101,22 +101,7 @@ let pokemonRepository = (function() {
 		modalBody.append(abilitiesElement);
 	}
 
-	// function hideModal() {
-	// 	modalContainer.classList.remove('show-modal');
 	// }
-
-	// window.addEventListener('keydown', e => {
-	// 	if (e.key === 'Escape' && modalContainer.classList.contains('show-modal')) {
-	// 		hideModal();
-	// 	}
-	// });
-
-	// modalContainer.addEventListener('click', (e) => {
-	//   let target = e.target;
-	//   if (target === modalContainer) {
-	//     hideModal();
-	//   }
-	// });
 
 	return {
 		add: add,
