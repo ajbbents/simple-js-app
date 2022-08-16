@@ -22,7 +22,7 @@ let pokemonRepository = (function() {
 		buttonItem.innerText = pokemon.name;
 		buttonItem.setAttribute('data-toggle', 'modal');
 		buttonItem.setAttribute('data-target', '#pokemon-modal');
-		'$(buttonItem).addClass("button-class btn-block btn m1");'
+		$(buttonItem).addClass( 'button-class', 'btn-block', 'btn', 'm1' );
 		buttonItem.classList.add('button-class');
 		listItem.appendChild(buttonItem);
 		pokemonList.appendChild(listItem);
