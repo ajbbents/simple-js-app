@@ -101,23 +101,23 @@ let pokemonRepository = (function() {
 		modalBody.append(abilitiesElement);
 	}
 
-	// const search = document.getElementById('search');
-	// search.addEventListener('input', searchList);
-	//
-	// function searchList() {
-	// 	let searchInput = document.getElementById('search').value;
-	// 	searchInput = searchInput.toLowerCase();
-	// 	const listItems = $('button');
-	// 	listItems.each(function() {
-	// 		const item = $(this);
-	// 		const name = item.text();
-	// 		if (name.includes(searchInput)) {
-	// 			item.show();
-	// 		} else {
-	// 			item.hide();
-	// 		}
-	// 	});
-	// }
+	const search = document.getElementById('search');
+	search.addEventListener('input', searchList);
+
+	function searchList() {
+		let searchInput = document.getElementById('search').value;
+		searchInput = searchInput.toLowerCase();
+		const listItems = $('button');
+		listItems.each(function() {
+			const item = $(this);
+			const name = item.text();
+			if (name.includes(searchInput)) {
+				item.show();
+			} else {
+				item.hide();
+			}
+		});
+	}
 
 	return {
 		add: add,
