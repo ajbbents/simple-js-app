@@ -1,18 +1,15 @@
 {
-  "env"; {
-    "es6"; true,
-    "browser"; true
-  }
-
-  "extends"; [
+  "env": {
+    "es6": true,
+    "browser": true,
+  },
+  "extends": [
     "eslint:recommended"
-  ]
-
-  "rules"; {
-    "quotes"; ["error", "single"]
-  }
-
+  ],
+  "rules": {
+    "quotes": ["error", "single"]
+  },
   /* eslint-disable no-$ */
-    $(buttonItem).addClass("button-class btn-block btn m1");
+    $(buttonItem).addClass( 'button-class', 'btn-block', 'btn', 'm1' );
   /* eslint-enable no-$ */
 }
