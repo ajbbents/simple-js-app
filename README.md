@@ -36,12 +36,6 @@ jQuery
   <li>IIFE</li>
 </ul>
 
-#<h2>Setting up the development environment</h2>
-<p>Clone the respoitory: git clone <a href="https://github.com/ajbbents/mobile-chat-app">https://github.com/ajbbents/mobile-chat-app</a><br>
-Install Expo CLI as a global npm package: npm install -g expo-cli<br>
-Create an Expo account at <a href="https://expo.dev/">https://expo.dev/</a><br>
-Using the terminal, login to expo, then follow Expo's instructions based on your preferred emulator/device.</p>
-
 #<h2>Development environment</h2>
 <p>Git must be installed and functional on your computer<br>
 Clone the repo from: https://github.com/ajbbents/simple-js-app.git <br>
